@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Form Pemesanan Barang</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; }
+        .form-group { display: flex; margin-bottom: 10px; align-items: center; }
+        .form-group label { width: 120px; font-weight: bold; }
+        .form-group input[type="text"], .form-group select { flex-grow: 1; padding: 5px; border: 1px solid #ddd; }
+        .form-group.result-info input { border: none; background: none; }
+        .header-box { border: 1px solid black; padding: 5px 10px; margin-bottom: 15px; text-align: center; background-color: #f9f9f9; }
+        .image-placeholder { width: 120px; height: 120px; border: 1px solid black; display: inline-block; margin-right: 20px; background-color: #eee; text-align: center; float: left; }
+        .image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+        .product-info { overflow: hidden; }
+        .pay-button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer; display: block; width: 100%; margin-top: 20px; text-align: center; text-decoration: none; }
+        .form-group.checkbox-group label { width: auto; font-weight: normal; margin-left: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="header-box">A Web Page (Simulasi Bar Navigasi)</div>
+
+<div class="container">
+    <h2>Hasil Form Pemesanan Barang</h2>
+
+    <form>
+        <!-- Ganti "tv-samsung.jpg" sesuai nama file gambar kamu di folder -->
+        <div class="image-placeholder">
+            <img src="HP.png" alt="Foto Barang">
+        </div>
+
+        <div class="product-info">
+            <div class="form-group result-info">
+                <label>Title Here</label>
+                <input type="text" value="HP Samsung" readonly>
+            </div>
+            <div class="form-group result-info">
+                <label>Description</label>
+                <input type="text" value="Smartphone" readonly>
+            </div>
+            <div class="form-group result-info">
+                <label>Total Amount</label>
+                <input type="text" value="5000000" readonly>
+            </div>
+            <div class="form-group result-info">
+                <label>Condition</label>
+                <input type="text" value="Bagus" readonly>
+            </div>
+        </div>
+
+        <div style="clear: both;"></div> 
+
+        <div class="form-group">
+            <label for="payTo">Pay to</label>
+            <input type="text" id="payTo" value="4210489130" readonly>
+        </div>
+        
+        <div class="form-group">
+            <label for="paymentType">Payment Type</label>
+            <select id="paymentType">
+                <option selected>Visa Debit</option>
+                <option>MasterCard</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="accountHolder">Account Holder</label>
+            <input type="text" id="accountHolder" value="Nur Zahra Sari Safitri">
+        </div>
+        
+        <div class="form-group">
+            <label for="accountNo">Account No</label>
+            <input type="text" id="accountNo" value="4210489130">
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="emailCopy" checked>
+            <label for="emailCopy">Email me copy of transaction</label>
+        </div>
+
+        <div class="form-group">
+            <label for="sendToMobileResult">Send to Mobile Phone</label>
+            <input type="text" id="sendToMobileResult" value="0895326561350">
+        </div>
+        <div class="form-group">
+            <label for="sendToEmailResult">Send to Email</label>
+            <input type="text" id="sendToEmailResult" value="nurzahrasarisafitri@gmail.com">
+        </div>
+        
+        <a href="#" class="pay-button">Pay using QualiLink</a>
+    </form>
+</div>
+
+</body>
+</html>
