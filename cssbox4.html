@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS BOX 4</title>
+  <style>
+    .container {
+      width: 700px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .top-left {
+      background-color: rgb(230, 25, 230);
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+
+    .top-right {
+      background-color: rgb(255, 117, 220);
+      width: 535px;
+      height: 50px;
+      border: 2px solid black;
+    }
+
+    .middle {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .left {
+      background-color: rgb(153, 144, 238);
+      width: 150px;
+      height: 400px;
+      border: 2px solid black;
+    }
+
+    .center {
+      background-color: lightgray;
+      width: 375px;
+      height: 400px;
+      border: 2px solid black;
+    }
+
+    .right {
+      background-color: skyblue;
+      width: 150px;
+      height: 400px;
+      border: 2px solid black;
+    }
+
+    .footer {
+      background-color: rgb(251, 255, 0);
+      height: 50px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="top-left"></div>
+      <div class="top-right"></div>
+    </div>
+
+    <div class="middle">
+      <div class="left"></div>
+      <div class="center"></div>
+      <div class="right"></div>
+    </div>
+
+    <div class="footer"></div>
+  </div>
+</body>
+</html>
